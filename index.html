@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Secret Burger Society — Kochi's Best Kept Secret</title>
+  <meta name="description" content="An exclusive, clandestine burger collective. 25 burgers. One city. Tonight. Request initiation into The Secret Burger Society, Kochi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garant:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+
+  <!-- SCANLINES OVERLAY -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════
+       INITIATION GATE (full-screen entry)
+  ══════════════════════════════════════════ -->
+  <div id="initiationGate" class="initiation-gate">
+    <div class="gate-noise"></div>
+
+    <div class="gate-content">
+      <!-- Eye -->
+      <div class="gate-eye-wrap" id="gateEyeWrap">
+        <div class="gate-eye-ring ring-1"></div>
+        <div class="gate-eye-ring ring-2"></div>
+        <div class="gate-eye-ring ring-3"></div>
+        <span class="gate-eye-glyph" id="gateEyeGlyph">👁</span>
+      </div>
+
+      <p class="gate-intercept">— TRANSMISSION INTERCEPTED —</p>
+      <h2 class="gate-title">YOU HAVE BEEN<br>CHOSEN.</h2>
+      <div class="gate-rule"></div>
+      <p class="gate-body">What you are about to witness is classified.<br>The Society does not seek you. <em>You</em> sought The Society.<br>Proceed only if you are prepared to swear your oath of silence.</p>
+
+      <button class="gate-btn" id="gateBtn">
+        <span class="gate-btn-text">✦ &nbsp;I AM PREPARED — ENTER &nbsp;✦</span>
+      </button>
+
+      <p class="gate-warning">⚠ By entering you acknowledge the existence of The Secret Burger Society.<br>This information is not to be shared with the uninitiated.</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MORSE CODE TICKER (top fixed bar)
+  ══════════════════════════════════════════ -->
+  <div class="morse-ticker" aria-hidden="true">
+    <span class="morse-label">ENCRYPTED:</span>
+    <div class="morse-scroll-wrap">
+      <span class="morse-code">.... .. -.. -.. . -. .--. .-. --- - --- -.-. --- .-.. / .- -.-. - .. ...- .- - . -.. &nbsp;&nbsp;&nbsp;&nbsp; .... .. -.. -.. . -. .--. .-. --- - --- -.-. --- .-.. / .- -.-. - .. ...- .- - . -..</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 1: THE GATEWAY (Hero)
+  ══════════════════════════════════════════ -->
+  <section id="gateway" class="hero">
+    <div class="smoke-canvas" id="smokeCanvas"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="cipher-bg" id="cipherBg" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="crest-wrap">
+        <div class="crest-ring ring-a"></div>
+        <div class="crest-ring ring-b"></div>
+        <img src="crest.png" alt="Secret Burger Society Crest" class="crest-img" id="crestImg" />
+        <div class="crest-glow"></div>
+      </div>
+
+      <p class="hero-eyebrow">KOCHI'S BEST KEPT SECRET</p>
+      <h1 class="hero-title" id="heroTitle">THE SECRET<br>BURGER SOCIETY</h1>
+
+      <div class="hero-sub-wrap">
+        <p class="hero-sub" id="heroSub"></p>
+        <span class="typewriter-cursor" id="twCursor">|</span>
+      </div>
+
+      <p class="hero-motto">VERITAS &middot; IN &middot; TENEBRIS</p>
+
+      <button class="cta-btn" id="ctaBtn" onclick="document.getElementById('creed').scrollIntoView({behavior:'smooth'})">
+        <span class="btn-text">REQUEST INITIATION</span>
+        <span class="btn-glow"></span>
+      </button>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 2: THE CREED (About)
+  ══════════════════════════════════════════ -->
+  <section id="creed" class="creed">
+    <div class="container creed-grid">
+      <div class="creed-text reveal-left">
+        <p class="section-label">THE CREED</p>
+        <h2 class="section-title">WE DO NOT CATER<br>TO THE MASSES.</h2>
+        <p class="body-text">We are a brotherhood of flavor, a clandestine collective bound by the pursuit of the perfect smash. You will not find us on street corners. You will not hear our advertisements. We exist in the shadows, revealing ourselves only to those who seek the extraordinary.</p>
+        <p class="body-text">The Secret Burger Society is an oath. An oath that quality is scarce, that patience is rewarded, and that the finest things in life are not available to all—only to the worthy.</p>
+        <p class="body-text redacted-doc">We operate under the direct authority of <span class="redacted" title="CLASSIFIED">████████████</span>, bound by the ancient accords of <span class="redacted" title="CLASSIFIED">███ ████ ████</span>. Our initiates are selected by <span class="redacted" title="CLASSIFIED">███████ ██████████</span> alone.</p>
+        <div class="creed-divider">
+          <span class="divider-line"></span>
+          <span class="divider-icon">✦</span>
+          <span class="divider-line"></span>
+        </div>
+        <p class="latin-motto">VERITAS &middot; QUALITAS &middot; SILENTIUM</p>
+      </div>
+
+      <div class="creed-image reveal-right">
+        <div class="image-frame">
+          <img src="box.png" alt="Secret Society Matte Black Box with Gold Wax Seal" class="creed-img" loading="lazy" />
+          <div class="image-overlay"></div>
+          <div class="classified-stamp">CLASSIFIED</div>
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
+          <div class="file-label">FILE: SBS-KCH-001 &nbsp;|&nbsp; RESTRICTED ACCESS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 3: THE RELIC (The Burger)
+  ══════════════════════════════════════════ -->
+  <section id="relic" class="relic">
+    <div class="relic-bg-texture"></div>
+    <div class="do-not-share" aria-hidden="true">DO NOT DISTRIBUTE</div>
+
+    <div class="relic-media reveal-up">
+      <div class="burger-showcase">
+        <img src="burger.png" alt="The Relic — Signature Smash Burger" class="burger-img" loading="lazy" />
+        <div class="burger-glow-ring"></div>
+        <div class="ember-particles" id="embers"></div>
+      </div>
+    </div>
+
+    <div class="relic-content reveal-up">
+      <p class="section-label">THE RELIC</p>
+      <h2 class="section-title">FORGED IN FIRE.<br>SEALED IN GOLD.</h2>
+      <p class="body-text">This is not a meal. This is an artifact. A double-stack behemoth, brutally smashed on a scorching griddle, locking in a crust of seared perfection. Draped in molten, aged cheddar, bound by our classified "Society Sauce," and cradled in a toasted brioche bun baked exclusively for our ranks.</p>
+      <p class="body-text gold-text"><em>Each Relic is accompanied by signature sides and encased in our ritualistic packaging.</em></p>
+      <div class="relic-coordinates">
+        <span class="coord-label">COORDINATES:</span>
+        <span class="coord-value" id="relicCoords">9°5&prime;82&Prime;N &nbsp;76°5&prime;21&Prime;E</span>
+        <span class="coord-blink">▌</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 4: THE RITUAL (How it Works)
+  ══════════════════════════════════════════ -->
+  <section id="ritual" class="ritual">
+    <div class="container">
+      <div class="ritual-header reveal-up">
+        <p class="section-label" style="justify-content:center;">THE RITUAL</p>
+        <h2 class="section-title">PROVE YOUR DEVOTION.</h2>
+
+        <!-- LIVE COUNTDOWN -->
+        <div class="countdown-widget">
+          <p class="countdown-label"><span class="cd-dot">⬤</span>&nbsp; NEXT DROP IN</p>
+          <div class="countdown-digits">
+            <div class="digit-group">
+              <span class="digit-val" id="cdHours">00</span>
+              <label class="digit-label">HRS</label>
+            </div>
+            <div class="digit-sep">:</div>
+            <div class="digit-group">
+              <span class="digit-val" id="cdMins">00</span>
+              <label class="digit-label">MIN</label>
+            </div>
+            <div class="digit-sep">:</div>
+            <div class="digit-group">
+              <span class="digit-val" id="cdSecs">00</span>
+              <label class="digit-label">SEC</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-step reveal-left" id="step1">
+          <div class="step-marker">
+            <div class="step-dot"><span class="step-icon">👁️</span></div>
+          </div>
+          <div class="step-content">
+            <p class="step-time">18:00 HRS</p>
+            <h3 class="step-title">THE WHISPER</h3>
+            <p class="step-body">The chosen location is hinted at on our Instagram. The city holds its breath.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal-right" id="step2">
+          <div class="step-marker">
+            <div class="step-dot"><span class="step-icon">🖋️</span></div>
+          </div>
+          <div class="step-content">
+            <p class="step-time">20:00 HRS</p>
+            <h3 class="step-title">THE SELECTION</h3>
+            <p class="step-body">The digital gates open. Only 25 slots are granted. The swift survive. The slow go hungry.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal-left" id="step3">
+          <div class="step-marker">
+            <div class="step-dot"><span class="step-icon">📍</span></div>
+          </div>
+          <div class="step-content">
+            <p class="step-time">23:30 HRS</p>
+            <h3 class="step-title">THE REVELATION</h3>
+            <p class="step-body">The exact GPS coordinates are delivered to the initiated. The pilgrimage begins.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step reveal-right" id="step4">
+          <div class="step-marker">
+            <div class="step-dot"><span class="step-icon">🤝</span></div>
+          </div>
+          <div class="step-content">
+            <p class="step-time">00:00 HRS</p>
+            <h3 class="step-title">THE EXCHANGE</h3>
+            <p class="step-body">Midnight. The rendezvous. Collect your relic. Consume in secrecy. Share the evidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 5: THE SUMMONS (Waitlist)
+  ══════════════════════════════════════════ -->
+  <section id="summons" class="summons">
+    <div class="summons-particles" id="summonParticles"></div>
+
+    <div class="container summons-content reveal-up">
+      <div class="summons-crest">✦</div>
+      <h2 class="section-title summons-title">ARE YOU WORTHY?</h2>
+      <p class="body-text summons-body"><em>The Society is not open to all. Register your name below to be considered for the inner circle. Members receive a 30-minute head start before the public drop.</em></p>
+
+      <div class="waitlist-form-wrap" id="formWrap">
+        <form class="waitlist-form" id="waitlistForm" onsubmit="handleSubmit(event)">
+          <div class="input-group">
+            <input type="email" id="emailInput" name="email" class="email-input"
+              placeholder="Enter your email to join the waitlist..." required autocomplete="email" />
+            <button type="submit" class="seal-btn" id="sealBtn">
+              <span class="btn-text">SEAL MY FATE</span>
+              <span class="btn-glow"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="success-state" id="successState" style="display:none;">
+        <div class="wax-seal-icon">🔱</div>
+        <p class="success-text">You are on the list. Await our signal.</p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p class="footer-text">© 2024 The Secret Burger Society &nbsp;|&nbsp; Kochi, India &nbsp;|&nbsp;
+        <a href="https://instagram.com/thesecretburgersociety" target="_blank" rel="noopener" class="footer-link" id="instagramLink">@thesecretburgersociety</a>
+      </p>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
